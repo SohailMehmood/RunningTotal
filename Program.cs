@@ -10,9 +10,15 @@ public static class Program
             throw new ArgumentNullException(nameof(args));
         }
 
+        int sum = 0;
         var numbers = new List<int>()
-            { 107, 92, 3, 46, 5096, 666, 85 };
+            { 1, 2, 3, 4, 5};
 
-        Console.WriteLine(numbers.Count);
+        foreach (int number in numbers)
+        {
+            sum += number;
+        }
+
+        Console.WriteLine(sum);
     }
 }
